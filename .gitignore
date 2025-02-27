@@ -1,0 +1,4 @@
+credentials.*
+source.file
+.terraform
+.terraform.lock.hcl*

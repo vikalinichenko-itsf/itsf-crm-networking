@@ -1,0 +1,39 @@
+---
+# A sample yaml file
+company: itsmartflex
+project: crm
+networks:
+  - name: "10.1.10/24"
+    description: "Test network. 10.1.10/24"
+    isolated: true
+    prefix_length: 24
+    ip_pools:
+      - start_address: "10.1.10.2"
+        end_address: "10.1.10.50"
+    gateway: "10.1.10.1"
+    guest_vlan_allowed: true
+    dhcp_enable: true
+    dhcp_pools:
+      - start_address: "10.1.10.201"
+        end_address: "10.1.10.253"
+    dhcp_mode: "NETWORK"
+    listener_ip_address: "10.1.10.254"
+    dns1: "10.1.1.4"
+    dns2: "1.1.1.1"
+  - name: "10.1.11/24"
+    description: "Test network. 10.1.11/24"
+    isolated: true
+    prefix_length: 24
+    ip_pools:
+      - start_address: "10.1.11.2"
+        end_address: "10.1.11.50"
+    gateway: "10.1.11.1"
+    guest_vlan_allowed: true
+    dhcp_enable: true
+    dhcp_pools:
+      - start_address: "10.1.11.201"
+        end_address: "10.1.11.253"
+    dhcp_mode: "NETWORK"
+    listener_ip_address: "10.1.11.254"
+    dns1: "10.1.1.4"
+    dns2: "1.1.1.1"
