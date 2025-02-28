@@ -3,7 +3,8 @@ variable "vcd_max_retry_timeout" {
 }
 
 variable "tf_environment" {
-  type = string
+  type    = string
+  default = "default"
 }
 
 variable "vcd_config_dir" {
