@@ -18,5 +18,5 @@ networks:
         end_address: "10.1.2.253"
     dhcp_mode: "NETWORK"
     listener_ip_address: "10.1.2.254"
-    dns1: "10.1.1.4"
+    dns1: "10.1.2.4"
     dns2: "1.1.1.1"
